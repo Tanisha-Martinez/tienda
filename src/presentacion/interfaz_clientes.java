@@ -100,9 +100,7 @@ public class interfaz_clientes extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog (null,"Ingrese el  numero de la opcion que desea realizar.");
-        String opcion = JOptionPane.showInputDialog("1. Ingresar cliente."+"2. Modificar cliente. "+"3. Eliminar cliente. "+"4. Listado de clientes. ");
-        
+       
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed

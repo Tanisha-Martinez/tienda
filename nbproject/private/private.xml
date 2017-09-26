@@ -3,7 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/tharix/NetBeansProjects/opciones/src/presentacion/interfaz_clientes.java</file>
+            <file>file:/home/tharix/NetBeansProjects/tienda/src/presentacion/opcion_cliente.java</file>
+            <file>file:/home/tharix/NetBeansProjects/tienda/src/presentacion/ventas.java</file>
+            <file>file:/home/tharix/NetBeansProjects/tienda/src/presentacion/opcion_producto.java</file>
+            <file>file:/home/tharix/NetBeansProjects/tienda/src/presentacion/interfaz_clientes.java</file>
         </group>
     </open-files>
 </project-private>
