@@ -1,7 +1,9 @@
 
 package presentacion;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -100,13 +102,15 @@ public class interfaz_clientes extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+        
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         String nombre = JOptionPane.showInputDialog("Ingrese nombre del producto:");
+        
+        
         
         
         // TODO add your handling code here:
@@ -145,8 +149,11 @@ public class interfaz_clientes extends javax.swing.JFrame {
                 new interfaz_clientes().setVisible(true);
             }
         });
+        
+        
     }
-
+        
+        
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
