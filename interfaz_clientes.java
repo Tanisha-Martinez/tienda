@@ -1,7 +1,9 @@
 
 package presentacion;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
@@ -16,7 +18,11 @@ public class interfaz_clientes extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
-        setTitle("Ventana principal");
+        setTitle("Ventana Principal");
+        setVisible(false);
+
+        
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -34,6 +40,7 @@ public class interfaz_clientes extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 205, 253));
 
         jButton1.setText("Clientes");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -96,24 +103,46 @@ public class interfaz_clientes extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-/**
+
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        System.exit(0);*/
+       System.exit(0);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Ventana_cliente obj=new Ventana_cliente();
-        obj.setVisible(true);
-        dispose();
-        
-        
-        
+      
+          int mc = 0;
+      
+        switch (mc) { 
+            
+            case 0:    
+                JOptionPane.showInputDialog("Elija la opcion que desea realizar\n   1- Ingresar cliente\n   2- Modificar cliente\n "
+                + "  3- Eliminar cliente\n   4- Listado de clientes\n   5- Regresar al menu anterior");
+            break;
+            
+            case 1: 
+                JOptionPane.showInputDialog("usted ha elegido la opcion 1");
+            break;
+            
+            default: JOptionPane.showInputDialog("Opcion no valida");
+            break;
+        }
+       
+        if (mc == 1){
+            JOptionPane.showInputDialog("usted ha  elegido la opcion 1");
+            
 
+        }
+    
+        
+        
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        String nombre = JOptionPane.showInputDialog("Ingrese nombre del producto:");
+        JOptionPane.showInputDialog("Elija la opcion que desea realizar\n   1- Ingresar producto\n   2- Modificar producto\n "
+                + "  3- Listado de producto \n   4- Regresar al menu anterior");        
+        
         
         
         // TODO add your handling code here:
@@ -152,8 +181,11 @@ public class interfaz_clientes extends javax.swing.JFrame {
                 new interfaz_clientes().setVisible(true);
             }
         });
+        
+        
     }
-
+        
+        
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -162,17 +194,5 @@ public class interfaz_clientes extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     // End of variables declaration//GEN-END:variables
 
-    private void initComponents() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private static class Ventana_cliente {
-
-        public Ventana_cliente() {
-        }
-
-        private void setVisible(boolean b) {
-            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-    }
+    
 }
