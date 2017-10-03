@@ -20,8 +20,6 @@ public class interfaz_clientes extends javax.swing.JFrame {
         setResizable(false);
         setTitle("Ventana Principal");
         setVisible(false);
-
-        
     }
 
     /**
@@ -40,7 +38,6 @@ public class interfaz_clientes extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(153, 205, 253));
 
         jButton1.setText("Clientes");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -109,39 +106,55 @@ public class interfaz_clientes extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      
-          int mc = 0;
+        JOptionPane.showInputDialog("Elija la opcion que desea realizar\n   1- Ingresar cliente\n   2- Modificar cliente\n "
+                + "  3- Eliminar cliente\n   4- Listado de clientes\n   5- Regresar al menu anterior");
+        int mc = 0;
       
         switch (mc) { 
             
-            case 0:    
-                JOptionPane.showInputDialog("Elija la opcion que desea realizar\n   1- Ingresar cliente\n   2- Modificar cliente\n "
-                + "  3- Eliminar cliente\n   4- Listado de clientes\n   5- Regresar al menu anterior");
+            case 1:  
+                 
+                JOptionPane.showInputDialog("usted ha  elegido la opcion ingresar");
+                  
             break;
             
-            case 1: 
-                JOptionPane.showInputDialog("usted ha elegido la opcion 1");
+            case 2: 
+                if (mc == 2){
+                JOptionPane.showInputDialog("usted ha elegido la opcion modificar");
+                }
+            break;
+            
+            case 3: 
+                if (mc == 3){
+                JOptionPane.showInputDialog("usted ha elegido la opcion eliminar");
+                }
+            break;
+            
+            case 4: 
+                if (mc == 4){
+                JOptionPane.showInputDialog("usted ha elegido ver listado de cliente");
+                }
             break;
             
             default: JOptionPane.showInputDialog("Opcion no valida");
             break;
         }
+        
+       // Escribir condicionales fuera del switch y dentro de los case, mostrar el menu de la opcion  
        
         if (mc == 1){
             JOptionPane.showInputDialog("usted ha  elegido la opcion 1");
             
 
         }
-    
         
-        
-        
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         JOptionPane.showInputDialog("Elija la opcion que desea realizar\n   1- Ingresar producto\n   2- Modificar producto\n "
-                + "  3- Listado de producto \n   4- Regresar al menu anterior");        
+                + "  3- Listado de producto \n   4- Regresar al menu anterior"); 
         
         
         
@@ -193,6 +206,4 @@ public class interfaz_clientes extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     // End of variables declaration//GEN-END:variables
-
-    
 }
