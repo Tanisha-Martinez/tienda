@@ -16,12 +16,6 @@ public class interfaz_clientes extends javax.swing.JFrame {
      */
     public interfaz_clientes() {
         initComponents();
-        setLocationRelativeTo(null);
-        setResizable(false);
-        setTitle("Ventana Principal");
-        setVisible(false);
-
-        
     }
 
     /**
@@ -40,7 +34,6 @@ public class interfaz_clientes extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(153, 205, 253));
 
         jButton1.setText("Clientes");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -109,39 +102,52 @@ public class interfaz_clientes extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      
-          int mc = 0;
-      
-        switch (mc) { 
-            
-            case 0:    
-                JOptionPane.showInputDialog("Elija la opcion que desea realizar\n   1- Ingresar cliente\n   2- Modificar cliente\n "
-                + "  3- Eliminar cliente\n   4- Listado de clientes\n   5- Regresar al menu anterior");
-            break;
-            
-            case 1: 
-                JOptionPane.showInputDialog("usted ha elegido la opcion 1");
-            break;
-            
-            default: JOptionPane.showInputDialog("Opcion no valida");
-            break;
-        }
-       
-        if (mc == 1){
-            JOptionPane.showInputDialog("usted ha  elegido la opcion 1");
-            
+        
+        String menu = new String("Elija una opción que desea realizar:\n"+"1- Ingresar cliente"+"\n"
+        +"2- Modificar cliente"+"\n"+"3- Eliminar cliente"+"\n+"+"4- Listado de clientes"+"\n"
+        +"5- Regresar al menu anterior");
+		
+		String option = JOptionPane.showInputDialog(menu.toString());
+		switch (option) {
+                   
+		case "1":
+                        			
+                        break;
+		case "2":
+                        String newnombre = JOptionPane.showInputDialog("Ingrese nuevo nombre:");
+                        String newnit = JOptionPane.showInputDialog("Ingrese nuvo Nit: ");
+                        String newdireccion = JOptionPane.showInputDialog("Ingrese dnueva ireccion:");
+                        String newtelefono = JOptionPane.showInputDialog("Ingrese nuevo telefono:");
+                        String newemail = JOptionPane.showInputDialog("Ingrese nuevo email:");			break;
+		case "3":
+			JOptionPane.showMessageDialog(null, " ha elegido la opción 3");
+			break;
+		case "4":
+			JOptionPane.showMessageDialog(null, " ha elegido la opción 4");
+			break;
+                case "5":
+			JOptionPane.showMessageDialog(null, "usted ha decidido regresar al  menu anterior ");
+			break;
+		default:
+			JOptionPane.showMessageDialog(null, option + " no es una opción válida");
+			break;        
+                        
+		}
+                if (option == "1" ){
+                        String nombre = JOptionPane.showInputDialog("Ingrese nombre:");
+                        String nit = JOptionPane.showInputDialog("Ingrese Nit: ");
+                        String Direccion = JOptionPane.showInputDialog("Ingrese direccion:");
+                        String telefono = JOptionPane.showInputDialog("Ingrese telefono:");
+                        String email = JOptionPane.showInputDialog("Ingrese email:");
+                        JOptionPane.showMessageDialog(null, "Su saldo inicial es de Q.0.00");
+                }
 
-        }
-    
-        
-        
-        
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        JOptionPane.showInputDialog("Elija la opcion que desea realizar\n   1- Ingresar producto\n   2- Modificar producto\n "
-                + "  3- Listado de producto \n   4- Regresar al menu anterior");        
+        String nombre = JOptionPane.showInputDialog("Ingrese nombre del producto:");
+        
         
         
         
@@ -194,5 +200,6 @@ public class interfaz_clientes extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     // End of variables declaration//GEN-END:variables
 
-    
+   
+   
 }
